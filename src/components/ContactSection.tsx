@@ -43,7 +43,7 @@ const ContactSection: React.FC = () => {
         {/* PDF Viewer on the left */}
         <div className="w-1/2 bg-gray-800 p-4 rounded-lg">
         <iframe
-          src="/Andrew_Lara_Resume.pdf"
+          src="/Resume_Lara.pdf"
           style={{ width: '100%', height: '100%' }}
         />
         </div>
