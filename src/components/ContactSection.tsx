@@ -2,7 +2,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope} from 'react-icons/fa';
 import { InlineWidget } from "react-calendly";
-import PDFViewer from './PDFViewer';
+// import PDFViewer from './PDFViewer';
 
 const basicStyle = "flex flex-col items-center";
 const textStyle = "mt-5 text-sm";
@@ -42,7 +42,10 @@ const ContactSection: React.FC = () => {
       <div className="flex justify-center mt-16">
         {/* PDF Viewer on the left */}
         <div className="w-1/2 bg-gray-800 p-4 rounded-lg">
-          <PDFViewer />
+        <iframe
+          src="/Andrew_Lara_Resume.pdf"
+          style={{ width: '100%', height: '100%' }}
+        />
         </div>
 
         {/* Calendly Widget on the right */}
