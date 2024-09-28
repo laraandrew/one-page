@@ -6,7 +6,7 @@ import ImageURL from '../assets/imgURL.ts';
 
 const ProjectSection: React.FC = () => {
   return (
-    <section className="p-16 bg-gray-800">
+    <section className="md:p-8 bg-gray-800 lg:p-32">
       <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <ProjectCard 
