@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection.tsx';
 import AboutSection from '../components/AboutSection.tsx';
 import ContactSection from '../components/ContactSection.tsx';
 import ProjectSection from '../components/ProjectSection.tsx';
+import TechCarousel from '../components/TechCarousel.tsx';
 import ImageURL from '../assets/imgURL.ts';
 
   
@@ -17,6 +18,9 @@ const HomePage: React.FC = () => {
         <AboutSection />
         <div id='projects'>
           <ProjectSection />
+        </div>
+        <div>
+          <TechCarousel />
         </div>
         <div id='contact'>
           <ContactSection />
