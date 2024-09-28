@@ -39,17 +39,14 @@ const ContactSection: React.FC = () => {
         </a>
       </div>
 
-      <div className="flex flex-wrap justify-center mt-16">
-        {/* PDF Viewer on the left */}
-        <div className="w-1/2 bg-gray-800 p-4 rounded-lg">
-        <iframe
-          src="/Resume_Lara.pdf"
-          style={{ width: '100%', height: '100%' }}
-        />
+      <div className="flex flex-col md:flex-row justify-center mt-16 space-y-8 md:space-y-0 md:space-x-8">
+        <div className="w-full md:w-1/2 bg-gray-800 p-4 rounded-lg" style={{ height: '600px' }}>
+          <iframe
+            src="/Resume_Lara.pdf"
+            style={{ width: '100%', height: '100%' }}
+          />
         </div>
-
-        {/* Calendly Widget on the right */}
-        <div className="w-1/2 ml-8" style={{ height: '600px', overflow: 'hidden' }}>
+        <div className="w-full md:w-1/2 bg-gray-800 p-4 rounded-lg" style={{ height: '600px' }}>
           <InlineWidget
             url="https://calendly.com/aandrewlaraa/30min"
             styles={{ height: '100%', minWidth: '320px', width: '100%' }}
