@@ -13,7 +13,7 @@ const ContactSection: React.FC = () => {
     <section className="py-32 bg-gray-900 text-white text-center">
       <h2 className="text-4xl font-black mb-32">Connect with me</h2>
       <div className="flex justify-center gap-28 font-bold flex-wrap">
-        <a href="mailto:andrewlara2002@gmail.com" download className={basicStyle} target='_blank'>
+        <a href="mailto:andrewlara2002@gmail.com" className={basicStyle} target='_blank'>
           <div className="rounded-full p-4 hover:scale-125 bg-purple-500">
             <FaEnvelope className={iconColor} />
           </div>
@@ -39,7 +39,7 @@ const ContactSection: React.FC = () => {
         </a>
       </div>
 
-      <div className="flex justify-center mt-16">
+      <div className="flex flex-wrap justify-center mt-16">
         {/* PDF Viewer on the left */}
         <div className="w-1/2 bg-gray-800 p-4 rounded-lg">
         <iframe
@@ -49,8 +49,11 @@ const ContactSection: React.FC = () => {
         </div>
 
         {/* Calendly Widget on the right */}
-        <div className="w-1/2 ml-8">
-          <InlineWidget url="https://calendly.com/aandrewlaraa/30min" />
+        <div className="w-1/2 ml-8" style={{ height: '600px', overflow: 'hidden' }}>
+          <InlineWidget
+            url="https://calendly.com/aandrewlaraa/30min"
+            styles={{ height: '100%', minWidth: '320px', width: '100%' }}
+          />
         </div>
       </div>
     </section>
