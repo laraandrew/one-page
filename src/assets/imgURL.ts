@@ -6,6 +6,7 @@ const ImageURL = {
     moggerLogo: "/Mogger-Logo.png",
     tcwLogo: "/TCW-logo.png",
     natoLogo: "/natoLogo.png",
+    cnLogo: "/codeNinjasLogo.png"
   };
   
   export default ImageURL;

@@ -73,7 +73,7 @@ const TechCarousel: React.FC = () => {
           <BiLogoCPlusPlus className="text-6xl text-red-600" />
         </div>
         <div className="flex justify-center">
-          <FaLinux className="text-6xl text-black" />
+          <a href="https://www.linux.org/" target='_blank'><FaLinux className="text-6xl text-black" /></a>
         </div>
         <div className="flex justify-center">
           <FaWindows className="text-6xl text-blue-400" />
